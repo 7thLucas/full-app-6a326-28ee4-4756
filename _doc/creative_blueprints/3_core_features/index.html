@@ -1,24 +1,29 @@
 <style>
   .mode-landscape .sl-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
   .mode-portrait .sl-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .mode-landscape .sl-roadmap-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .mode-portrait .sl-roadmap-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 </style>
 
 <section class="w-full h-full overflow-auto bg-white">
-  <div class="flex flex-col p-10 h-full gap-6">
+  <div class="flex flex-col p-10 h-full gap-5">
 
     <!-- Header row -->
     <div class="flex items-start justify-between">
       <div>
-        <span class="text-xs font-bold text-violet-600 tracking-widest uppercase">Fitur Utama</span>
+        <span class="text-xs font-bold text-violet-600 tracking-widest uppercase">Core Features</span>
         <h2 class="text-3xl font-black text-slate-900 mt-1 leading-tight">
-          Dari klip ke video estetik — otomatis
+          From clips to aesthetic video — automatically
         </h2>
       </div>
-      <!-- Active persona chip -->
       <div class="flex-shrink-0 ml-4">
         <span class="bg-violet-600 text-white text-xs font-semibold px-4 py-2 rounded-full">
           TikTok / Reels Creator
@@ -26,87 +31,114 @@
       </div>
     </div>
 
-    <!-- Feature cards -->
-    <div class="sl-grid grid gap-4 flex-1">
+    <!-- MVP feature cards -->
+    <div class="sl-grid grid gap-3">
 
       <!-- 1 Upload -->
-      <div class="bg-violet-50 rounded-2xl p-5 border border-violet-100 flex flex-col gap-3">
-        <div class="w-9 h-9 bg-violet-600 rounded-xl flex items-center justify-center">
-          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <div class="bg-violet-50 rounded-2xl p-4 border border-violet-100 flex flex-col gap-2">
+        <div class="w-8 h-8 bg-violet-600 rounded-xl flex items-center justify-center flex-shrink-0">
+          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M12 12V4m0 0L8 8m4-4l4 4"/>
           </svg>
         </div>
         <div>
-          <h3 class="text-sm font-bold text-slate-900">Upload Multi-Klip</h3>
-          <p class="text-xs text-slate-500 leading-relaxed mt-1">Upload beberapa file video sekaligus dalam satu sesi. Mendukung format populer.</p>
+          <h3 class="text-xs font-bold text-slate-900">Batch Clip Upload</h3>
+          <p class="text-xs text-slate-500 leading-relaxed mt-0.5">Upload 30+ video files in one session. Popular formats supported.</p>
         </div>
       </div>
 
-      <!-- 2 Merge -->
-      <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200 flex flex-col gap-3">
-        <div class="w-9 h-9 bg-slate-800 rounded-xl flex items-center justify-center">
-          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h8M8 12h8M8 17h4"/>
-          </svg>
-        </div>
-        <div>
-          <h3 class="text-sm font-bold text-slate-900">Auto-Merge &amp; Stitch</h3>
-          <p class="text-xs text-slate-500 leading-relaxed mt-1">Klip digabung secara otomatis dengan urutan yang cerdas dan transisi mulus.</p>
-        </div>
-      </div>
-
-      <!-- 3 Filters -->
-      <div class="bg-rose-50 rounded-2xl p-5 border border-rose-100 flex flex-col gap-3">
-        <div class="w-9 h-9 bg-rose-500 rounded-xl flex items-center justify-center">
-          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
-          </svg>
-        </div>
-        <div>
-          <h3 class="text-sm font-bold text-slate-900">Filter Estetik Otomatis</h3>
-          <p class="text-xs text-slate-500 leading-relaxed mt-1">Efek sinematik dan filter visual diterapkan otomatis untuk tampilan estetik premium.</p>
-        </div>
-      </div>
-
-      <!-- 4 Per-clip duration -->
-      <div class="bg-amber-50 rounded-2xl p-5 border border-amber-100 flex flex-col gap-3">
-        <div class="w-9 h-9 bg-amber-500 rounded-xl flex items-center justify-center">
-          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <!-- 2 Duration -->
+      <div class="bg-amber-50 rounded-2xl p-4 border border-amber-100 flex flex-col gap-2">
+        <div class="w-8 h-8 bg-amber-500 rounded-xl flex items-center justify-center flex-shrink-0">
+          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <circle cx="12" cy="12" r="9"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 7v5l3 3"/>
           </svg>
         </div>
         <div>
-          <h3 class="text-sm font-bold text-slate-900">Kontrol Durasi Per Klip</h3>
-          <p class="text-xs text-slate-500 leading-relaxed mt-1">Atur durasi seragam per klip (mis. 2 detik). 30 klip × 2 detik = 1 menit — otomatis, tanpa hitung manual.</p>
+          <h3 class="text-xs font-bold text-slate-900">Per-Clip Duration Control</h3>
+          <p class="text-xs text-slate-500 leading-relaxed mt-0.5">Set a uniform duration per clip. 30 clips × 2 s = 1 min — derived automatically.</p>
         </div>
       </div>
 
-      <!-- 5 Preview & Export -->
-      <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200 flex flex-col gap-3">
-        <div class="w-9 h-9 bg-slate-600 rounded-xl flex items-center justify-center">
-          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M12 12v8M8 16l4 4 4-4"/>
+      <!-- 3 Merge -->
+      <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 flex flex-col gap-2">
+        <div class="w-8 h-8 bg-slate-800 rounded-xl flex items-center justify-center flex-shrink-0">
+          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h8M8 12h8M8 17h4"/>
           </svg>
         </div>
         <div>
-          <h3 class="text-sm font-bold text-slate-900">Preview &amp; Export</h3>
-          <p class="text-xs text-slate-500 leading-relaxed mt-1">Lihat preview hasil akhir sebelum mengunduh video berkualitas tinggi, siap upload.</p>
+          <h3 class="text-xs font-bold text-slate-900">Auto-Merge &amp; Stitch</h3>
+          <p class="text-xs text-slate-500 leading-relaxed mt-0.5">Clips combined in sequence with smooth transitions — no timeline editing.</p>
         </div>
       </div>
 
-      <!-- 6 No skills -->
-      <div class="bg-violet-600 rounded-2xl p-5 flex flex-col gap-3">
-        <div class="w-9 h-9 bg-white bg-opacity-20 rounded-xl flex items-center justify-center">
-          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <!-- 4 Filters + Export combined -->
+      <div class="bg-violet-600 rounded-2xl p-4 flex flex-col gap-2">
+        <div class="w-8 h-8 bg-white bg-opacity-20 rounded-xl flex items-center justify-center flex-shrink-0">
+          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
           </svg>
         </div>
         <div>
-          <h3 class="text-sm font-bold text-white">Tanpa Keahlian Khusus</h3>
-          <p class="text-xs text-violet-200 leading-relaxed mt-1">Tidak butuh skill editing. Siapa pun bisa membuat video estetik dalam menit.</p>
+          <h3 class="text-xs font-bold text-white">Filters &amp; Export</h3>
+          <p class="text-xs text-violet-200 leading-relaxed mt-0.5">Cinematic look applied automatically. Preview, then download — ready to share.</p>
         </div>
       </div>
 
     </div>
+
+    <!-- Roadmap divider -->
+    <div class="flex items-center gap-3">
+      <div class="flex-1 h-px bg-slate-200"></div>
+      <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Coming Next</span>
+      <div class="flex-1 h-px bg-slate-200"></div>
+    </div>
+
+    <!-- Roadmap feature cards -->
+    <div class="sl-roadmap-grid grid gap-3 flex-1">
+
+      <!-- Music & Audio Sync -->
+      <div class="bg-rose-50 rounded-2xl p-4 border border-rose-100 flex flex-col gap-2">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 bg-rose-500 rounded-xl flex items-center justify-center flex-shrink-0">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19a2 2 0 01-4 0 2 2 0 014 0zm12 0a2 2 0 01-4 0 2 2 0 014 0z"/>
+            </svg>
+          </div>
+          <span class="text-xs font-semibold text-rose-600 bg-rose-100 px-2 py-0.5 rounded-full">Music &amp; Audio Sync</span>
+        </div>
+        <p class="text-xs text-slate-600 leading-relaxed">Add background music that auto-trims to match the final video duration exactly — no manual cutting.</p>
+      </div>
+
+      <!-- Platform Presets -->
+      <div class="bg-sky-50 rounded-2xl p-4 border border-sky-100 flex flex-col gap-2">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 bg-sky-500 rounded-xl flex items-center justify-center flex-shrink-0">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <rect x="3" y="3" width="7" height="11" rx="1"/><rect x="14" y="3" width="7" height="9" rx="1"/>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 18h4m7 0h7"/>
+            </svg>
+          </div>
+          <span class="text-xs font-semibold text-sky-600 bg-sky-100 px-2 py-0.5 rounded-full">Platform Presets</span>
+        </div>
+        <p class="text-xs text-slate-600 leading-relaxed">One-click aspect ratio: 9:16 for TikTok, 4:5 for Reels. Smart auto-crop preserves subject framing per clip.</p>
+      </div>
+
+      <!-- Style Templates -->
+      <div class="bg-emerald-50 rounded-2xl p-4 border border-emerald-100 flex flex-col gap-2">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 bg-emerald-500 rounded-xl flex items-center justify-center flex-shrink-0">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="3"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 2v2m0 16v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M2 12h2m16 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+            </svg>
+          </div>
+          <span class="text-xs font-semibold text-emerald-600 bg-emerald-100 px-2 py-0.5 rounded-full">Style Templates</span>
+        </div>
+        <p class="text-xs text-slate-600 leading-relaxed">Pre-built visual themes — moody, bright, cinematic, minimal — applied to the whole video with one tap.</p>
+      </div>
+
+    </div>
+
   </div>
 </section>
