@@ -1,0 +1,1 @@
+saya mau membuat aplikasi yang dapat langsung membuat 1 video estetik dalam durasi 1-2 menit dengan gabungan beberapa video
