@@ -7,7 +7,7 @@ TBD — to be confirmed during onboarding
 An app that automatically creates a single aesthetic video (1–2 minutes) by combining several uploaded video clips. The user provides the raw footage; the app handles merging, transition effects, and aesthetic finishing — delivering one polished short-form video ready to share.
 
 ## Core Users
-Content creators, social media users, and anyone who wants to produce aesthetic video compilations quickly and without manual video editing skills.
+TikTok and Instagram Reels content creators — people who produce short-form vertical video content regularly and need a fast, repeatable way to turn raw clips into polished aesthetic compilations without manual editing.
 
 ## Core Value Proposition
 Zero-effort aesthetic video creation: upload multiple clips, receive one polished 1–2 minute video, ready to share — no editing skills required.
