@@ -21,11 +21,18 @@ Zero-effort aesthetic video creation: upload multiple clips, receive one polishe
 6. User previews and downloads the finished video
 
 ## Key Features
+
+### Shipped (MVP)
 - **Batch clip upload** — upload up to 30+ video files in one session
 - **Per-clip duration control** — set a uniform playback duration for every clip (e.g. 2 s per clip); output duration is derived automatically
 - **Auto-merge & stitch** — clips combined in sequence with smooth transitions, no timeline editing
 - **Aesthetic filters & transitions** — cinematic look applied automatically
 - **Preview & export** — preview result, then download the final video
+
+### Next Features (Roadmap)
+- **Music & Audio Sync** — users add background music; the app auto-trims the track to exactly match the final video duration, keeping audio in sync with no manual cutting
+- **Platform Presets** — one-click aspect ratio optimization: 9:16 for TikTok, 4:5 for Instagram Reels; smart auto-crop applied per clip so subject framing is preserved across formats
+- **Aesthetic Style Templates** — pre-built visual themes (moody, bright, cinematic, minimal) users apply to the whole video with one tap, replacing per-clip filter decisions with a single cohesive look
 
 ## Positioning
 Accessible to anyone. No editing timeline, no manual cutting, no technical skills needed. Fast, beautiful, automated.
