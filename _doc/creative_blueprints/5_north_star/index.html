@@ -1,0 +1,108 @@
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col p-10 h-full gap-6">
+
+    <!-- Header -->
+    <div class="flex items-start justify-between">
+      <div>
+        <span class="text-xs font-bold text-violet-600 tracking-widest uppercase">North Star Metric</span>
+        <h2 class="text-3xl font-black text-slate-900 mt-1 leading-tight">
+          Weekly Verified Operations
+        </h2>
+      </div>
+      <span class="flex-shrink-0 ml-4 bg-amber-100 text-amber-700 text-xs font-bold px-3 py-1.5 rounded-full tracking-wide uppercase">
+        Projected Impact — Based on Your Inputs
+      </span>
+    </div>
+
+    <div class="flex gap-5 flex-1">
+
+      <!-- Left column: Operation + WVO formula -->
+      <div class="flex flex-col gap-4 flex-1">
+
+        <!-- Verified operation -->
+        <div class="bg-violet-50 rounded-2xl p-5 border border-violet-200">
+          <span class="text-xs font-bold text-violet-600 uppercase tracking-wider">Operasi Terverifikasi</span>
+          <div class="text-lg font-black text-slate-900 mt-2">🎬 Video Estetik Dibuat</div>
+          <p class="text-xs text-slate-500 mt-1 leading-relaxed">
+            Pengguna mengupload klip, memproses, dan mengunduh satu video estetik yang selesai dibuat oleh app.
+          </p>
+        </div>
+
+        <!-- WVO formula -->
+        <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200 flex flex-col gap-3">
+          <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Formula WVO</span>
+
+          <div class="flex items-center gap-2 flex-wrap">
+            <!-- Assumption chip 1 -->
+            <div class="bg-amber-100 border border-amber-300 rounded-lg px-3 py-2 text-center">
+              <div class="text-lg font-black text-amber-800">50</div>
+              <div class="text-xs text-amber-600 font-medium">pengguna/minggu</div>
+              <div class="text-xs text-amber-500 italic">asumsi — ubah ini</div>
+            </div>
+            <span class="text-slate-400 font-bold text-lg">×</span>
+            <!-- Assumption chip 2 -->
+            <div class="bg-amber-100 border border-amber-300 rounded-lg px-3 py-2 text-center">
+              <div class="text-lg font-black text-amber-800">2</div>
+              <div class="text-xs text-amber-600 font-medium">video/pengguna/minggu</div>
+              <div class="text-xs text-amber-500 italic">asumsi — ubah ini</div>
+            </div>
+            <span class="text-slate-400 font-bold text-lg">=</span>
+            <!-- Result -->
+            <div class="bg-violet-600 rounded-lg px-4 py-2 text-center">
+              <div class="text-2xl font-black text-white">100</div>
+              <div class="text-xs text-violet-200 font-medium">video estetik/minggu</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right column: Value & ROI -->
+      <div class="flex flex-col gap-4 flex-1">
+
+        <!-- Value per operation -->
+        <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200 flex flex-col gap-3">
+          <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Nilai per Operasi</span>
+          <div class="text-xs text-slate-600 leading-relaxed">
+            Editing manual ~90 mnt − proses app ~5 mnt =
+            <span class="font-bold text-slate-800">85 mnt dihemat</span>
+          </div>
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="text-xs text-slate-600">85 mnt ×</span>
+            <div class="bg-amber-100 border border-amber-300 rounded-lg px-2 py-1 text-center inline-flex flex-col">
+              <span class="text-sm font-black text-amber-800">$15/jam</span>
+              <span class="text-xs text-amber-500 italic">asumsi — ubah ini</span>
+            </div>
+            <span class="text-xs text-slate-600">÷ 60 =</span>
+            <span class="text-sm font-black text-violet-700">$21,25/video</span>
+          </div>
+        </div>
+
+        <!-- Total impact -->
+        <div class="bg-violet-600 rounded-2xl p-5 flex flex-col gap-4 flex-1">
+          <span class="text-xs font-bold text-violet-300 uppercase tracking-wider">Total Projected Value</span>
+
+          <div class="flex gap-6">
+            <div>
+              <div class="text-xs text-violet-300 font-medium">Per Minggu</div>
+              <div class="text-2xl font-black text-white mt-0.5">$2,125</div>
+              <div class="text-xs text-violet-300 mt-0.5">100 ops × $21,25</div>
+            </div>
+            <div class="w-px bg-violet-500"></div>
+            <div>
+              <div class="text-xs text-violet-300 font-medium">Per Tahun</div>
+              <div class="text-2xl font-black text-white mt-0.5">$110,500</div>
+              <div class="text-xs text-violet-300 mt-0.5">$2,125 × 52 minggu</div>
+            </div>
+          </div>
+
+          <p class="text-xs text-violet-300 leading-relaxed border-t border-violet-500 pt-3">
+            Proyeksi berdasarkan asumsi di atas. Ubah nilai asumsi untuk menyesuaikan dengan kondisi aktual bisnis Anda.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
