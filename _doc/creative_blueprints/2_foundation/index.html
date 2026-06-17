@@ -1,0 +1,77 @@
+<style>
+  .mode-landscape .sl-layout {
+    flex-direction: row;
+  }
+  .mode-portrait .sl-layout {
+    flex-direction: column;
+  }
+  .mode-landscape .sl-left {
+    width: 52%;
+  }
+  .mode-landscape .sl-right {
+    width: 48%;
+  }
+  .mode-portrait .sl-left,
+  .mode-portrait .sl-right {
+    width: 100%;
+  }
+  .mode-portrait .sl-right {
+    height: 38%;
+  }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex w-full h-full">
+
+    <!-- Left: Problem + Solution -->
+    <div class="sl-left flex flex-col justify-center p-12 gap-7">
+
+      <div>
+        <span class="text-xs font-bold text-violet-600 tracking-widest uppercase">Fondasi Produk</span>
+        <h2 class="text-3xl font-black text-slate-900 mt-2 leading-snug">
+          Dari masalah nyata<br/>ke solusi yang tepat
+        </h2>
+      </div>
+
+      <!-- Problem card -->
+      <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200">
+        <div class="flex items-center gap-2 mb-3">
+          <div class="w-2.5 h-2.5 rounded-full bg-rose-500"></div>
+          <span class="text-xs font-bold text-rose-600 uppercase tracking-wider">Masalah</span>
+        </div>
+        <h3 class="text-base font-bold text-slate-900 leading-snug mb-2">
+          Membuat video estetik itu sulit dan memakan waktu
+        </h3>
+        <p class="text-sm text-slate-500 leading-relaxed">
+          Editing video manual membutuhkan 2–3 jam, software mahal, dan keahlian teknis. Banyak konten bagus terbengkalai karena proses yang rumit.
+        </p>
+      </div>
+
+      <!-- Solution card -->
+      <div class="bg-violet-50 rounded-2xl p-6 border border-violet-200">
+        <div class="flex items-center gap-2 mb-3">
+          <div class="w-2.5 h-2.5 rounded-full bg-violet-600"></div>
+          <span class="text-xs font-bold text-violet-600 uppercase tracking-wider">Solusi</span>
+        </div>
+        <h3 class="text-base font-bold text-slate-900 leading-snug mb-2">
+          Upload klip, dapatkan video estetik — otomatis
+        </h3>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Pilih beberapa klip, dan app langsung menggabungkan, menerapkan efek estetik, dan menghasilkan video 1–2 menit siap upload ke media sosial.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Right: Visual -->
+    <div class="sl-right relative overflow-hidden">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=content+creator+overwhelmed+by+complex+video+editing+software+timeline%2C+cinematic+portrait%2C+warm+natural+light%2C+laptop+screen%2C+frustrated+expression%2C+editorial+photography"
+        alt="Video editing challenge"
+        class="w-full h-full object-cover object-center"
+      />
+      <div class="absolute inset-0 bg-gradient-to-l from-transparent to-white" style="opacity:0.10;pointer-events:none;"></div>
+    </div>
+
+  </div>
+</section>
