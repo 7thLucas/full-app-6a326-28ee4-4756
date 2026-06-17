@@ -1,7 +1,7 @@
 # Product Overview
 
 ## Product Name
-TBD — to be confirmed during onboarding
+Magic Video
 
 ## What It Is
 An app that automatically creates a single aesthetic video (1–2 minutes) by combining several uploaded video clips. The user provides the raw footage; the app handles merging, transition effects, and aesthetic finishing — delivering one polished short-form video ready to share.
