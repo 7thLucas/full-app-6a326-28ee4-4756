@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #0A0A0F;
+    --foreground: #F9FAFB;
+    --card: #111118;
+    --card-foreground: #F9FAFB;
+    --popover: #111118;
+    --popover-foreground: #F9FAFB;
+    --primary: #A855F7;
+    --primary-foreground: #ffffff;
+    --secondary: #EC4899;
+    --secondary-foreground: #ffffff;
+    --muted: #1F1F2E;
+    --muted-foreground: #6B7280;
+    --accent: #A855F7;
+    --accent-foreground: #ffffff;
+    --destructive: #ef4444;
+    --destructive-foreground: #fafafa;
+    --border: #1F1F2E;
+    --input: #1F1F2E;
+    --ring: #A855F7;
+    --radius: 0.75rem;
+    --chart-1: #A855F7;
+    --chart-2: #EC4899;
+    --chart-3: #06b6d4;
+    --chart-4: #f59e0b;
+    --chart-5: #10b981;
+    --navbar-background: #0A0A0F;
+    --sidebar-background: #111118;
+    --sidebar-foreground: #F9FAFB;
+    --sidebar-primary: #A855F7;
+    --sidebar-primary-foreground: #ffffff;
+    --sidebar-accent: #1F1F2E;
+    --sidebar-accent-foreground: #F9FAFB;
+    --sidebar-border: #1F1F2E;
+    --sidebar-ring: #A855F7;
+  }
+
+  .dark {
+    --background: #0A0A0F;
+    --foreground: #F9FAFB;
+    --card: #111118;
+    --card-foreground: #F9FAFB;
+    --popover: #111118;
+    --popover-foreground: #F9FAFB;
+    --primary: #A855F7;
+    --primary-foreground: #ffffff;
+    --secondary: #EC4899;
+    --secondary-foreground: #ffffff;
+    --muted: #1F1F2E;
+    --muted-foreground: #6B7280;
+    --accent: #A855F7;
+    --accent-foreground: #ffffff;
+    --destructive: #ef4444;
+    --destructive-foreground: #fafafa;
+    --border: #1F1F2E;
+    --input: #1F1F2E;
+    --ring: #A855F7;
+    --navbar-background: #0A0A0F;
+    --sidebar-background: #111118;
+    --sidebar-foreground: #F9FAFB;
+    --sidebar-primary: #A855F7;
+    --sidebar-primary-foreground: #ffffff;
+    --sidebar-accent: #1F1F2E;
+    --sidebar-accent-foreground: #F9FAFB;
+    --sidebar-border: #1F1F2E;
+    --sidebar-ring: #A855F7;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', 'Poppins', 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* React DatePicker Styles */
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.react-datepicker {
+  font-family: inherit;
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) - 2px);
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.react-datepicker__header {
+  background-color: var(--background);
+  border-bottom: 1px solid var(--border);
+  border-top-left-radius: calc(var(--radius) - 2px);
+  border-top-right-radius: calc(var(--radius) - 2px);
+  padding-top: 0.75rem;
+}
+
+.react-datepicker__current-month {
+  color: var(--foreground);
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+}
+
+.react-datepicker__day-name {
+  color: var(--muted-foreground);
+  font-weight: 500;
+}
+
+.react-datepicker__day {
+  color: var(--foreground);
+  border-radius: calc(var(--radius) - 4px);
+}
+
+.react-datepicker__day:hover {
+  background-color: var(--accent);
+  color: var(--accent-foreground);
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.react-datepicker__day--keyboard-selected {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.react-datepicker__day--disabled {
+  color: var(--muted-foreground);
+  opacity: 0.5;
+}
+
+.react-datepicker__time-container {
+  border-left: 1px solid var(--border);
+}
+
+.react-datepicker__time-container .react-datepicker__time {
+  background-color: var(--background);
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box {
+  border-bottom-right-radius: calc(var(--radius) - 2px);
+}
+
+.react-datepicker__time-list-item {
+  color: var(--foreground);
+}
+
+.react-datepicker__time-list-item:hover {
+  background-color: var(--accent);
+  color: var(--accent-foreground);
+}
+
+.react-datepicker__time-list-item--selected {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+body {
+  background: #0A0A0F;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #F9FAFB;
+}
+
+/* Hide scrollbar for native mobile feel */
+::-webkit-scrollbar {
+  display: none;
+}
