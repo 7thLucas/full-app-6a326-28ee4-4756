@@ -13,17 +13,18 @@ Content creators, social media users, and anyone who wants to produce aesthetic 
 Zero-effort aesthetic video creation: upload multiple clips, receive one polished 1–2 minute video, ready to share — no editing skills required.
 
 ## Core Workflow (MVP)
-1. User uploads multiple video clips
-2. App automatically merges and stitches the clips together
-3. Aesthetic filters and transitions applied automatically
-4. Output video trimmed and optimized to 1–2 minutes
-5. User previews and downloads the finished video
+1. User uploads multiple video clips (e.g. 30 clips at once)
+2. User sets a uniform duration per clip (e.g. 2 seconds each)
+3. App automatically calculates total output duration (30 clips × 2 s = 1 min)
+4. Clips are merged and stitched in sequence — no manual editing
+5. Aesthetic filters and transitions applied automatically
+6. User previews and downloads the finished video
 
 ## Key Features
-- **Multi-clip upload** — upload multiple video files in one session
-- **Auto-merge & stitch** — clips combined seamlessly with smart ordering
+- **Batch clip upload** — upload up to 30+ video files in one session
+- **Per-clip duration control** — set a uniform playback duration for every clip (e.g. 2 s per clip); output duration is derived automatically
+- **Auto-merge & stitch** — clips combined in sequence with smooth transitions, no timeline editing
 - **Aesthetic filters & transitions** — cinematic look applied automatically
-- **Duration control** — output optimized to 1–2 minutes
 - **Preview & export** — preview result, then download the final video
 
 ## Positioning
